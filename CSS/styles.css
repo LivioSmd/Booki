@@ -5,6 +5,10 @@ main{
     flex-wrap: wrap;
 }
 
+img{
+    object-fit: cover;
+}
+
 body{
     font-family: Raleway;
 }
@@ -20,7 +24,7 @@ header{
 header nav{
     display: flex;
     align-items: center;
-    gap: 52px;
+    gap: 10px;
     font-size: 13px;
     height: 45px;
 }
@@ -28,6 +32,7 @@ header nav{
 a{
     text-decoration: none;
     color: black;
+    padding: 23px 20px;
 }
 
 a:visited{
@@ -36,6 +41,8 @@ a:visited{
 
 a:hover{
     color: #0065FC;
+    border-top: 2px #0065FC solid;
+    padding: 23px 20px;
 }
 
 i{
@@ -114,6 +121,11 @@ input#nomville{
     font-weight: 700;
 }
 
+.filtres-tel{
+    display: flex;
+    align-items: center;
+}
+
 h2{
     font-size: 15px;
 
@@ -184,6 +196,7 @@ h2{
     height: 89px;
     border-radius: 17px 17px 0px 0px;
     margin: 6px;
+    background-image:url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
 }
 
 .div-hebergements{
@@ -206,6 +219,8 @@ h2{
     font-weight: 700;
     height: 11px;
 }
+
+
 
 .hebergement1 p{
     margin: 9px;
@@ -322,6 +337,10 @@ aside p{
     margin: 13px;
  }
 
+ .bouton-rechercher2{
+    display: none;
+}
+
  @media all and (min-width: 768px) and (max-width: 992px) { /* Tablette */
 
     main{
@@ -359,7 +378,7 @@ aside p{
     }
 
     .romantique{
-        width: 12%;
+        width: 15%;
     }
 
     .animaux-autorises{
@@ -469,6 +488,7 @@ aside p{
         margin: 6px 14px !important;
     }
 
+
  }
 
  @media all and (max-width: 768px) {/*  téléphones portables */
@@ -495,6 +515,18 @@ aside p{
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    header nav{
+        display: flex;
+        width: 100%;
+        gap: 0px;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+    }
+
+    .logo-header{
+        padding-bottom: 20px;
     }
 
     .accueil-introduction h1 {
@@ -613,4 +645,28 @@ aside p{
         padding: 0px;
     }
 
+    .bouton-rechercher{
+        display: none;
+    }
+   
+    .bouton-rechercher2{
+        display: block;
+    }
+    
+    .bouton-rechercher2 i{
+        border-radius: 0px 10px 10px 0px;
+        color: white;
+        background-color: #0065FC;
+    }
+
+    a{
+        border-bottom: 3px #F2F2F2 solid;
+        padding: 15px 16%;
+    }
+
+    a:hover{
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+        padding: 15px 16%;
+    }
 }
