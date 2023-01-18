@@ -1,16 +1,12 @@
+body{
+    font-family: Raleway;
+}
+
 main{
     width: 992px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-}
-
-img{
-    object-fit: cover;
-}
-
-body{
-    font-family: Raleway;
 }
 
 header{
@@ -29,6 +25,44 @@ header nav{
     height: 45px;
 }
 
+.liens-nav:hover{
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+    padding: 23px 20px;
+}
+
+.accueil-introduction h1{
+    height: 8px;
+}
+
+.accueil-introduction p{
+    font-size: 13px;
+}
+
+.div-rechercher {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.div-rechercher i{
+    color: black;
+    background: #F2F2F2;
+    padding: 12px;
+    border: 1px solid #F2F2F2;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.filtres-tel{
+    display: flex;
+    align-items: center;
+}
+
+img{
+    object-fit: cover;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -39,11 +73,6 @@ a:visited{
     color: black;
 }
 
-.liens-nav:hover{
-    color: #0065FC;
-    border-top: 2px #0065FC solid;
-    padding: 23px 20px;
-}
 
 i{
     color: #0065FC;
@@ -63,10 +92,6 @@ footer div{
     width: 26%;
 }
 
-.accueil-introduction p{
-    font-size: 13px;
-}
-
 .logo-header{
     width: 48.09px;
     height: 15px;
@@ -75,25 +100,6 @@ footer div{
 h1{
     font-weight: 700;
     font-size: 17px;
-}
-
-.accueil-introduction h1{
-    height: 8px;
-}
-
-.div-rechercher{
-    padding: 4px;
-    display: flex;
-    align-items: center;
-}
-
-.div-rechercher i{
-    color: black;
-    background: #F2F2F2;
-    padding: 12px;
-    border: 1px solid #F2F2F2;
-    border-right: none;
-    border-radius: 10px 0px 0px 10px;
 }
 
 .bouton-rechercher{
@@ -119,11 +125,6 @@ input#nomville{
 .petit-titre{
     font-size: 13px !important;
     font-weight: 700;
-}
-
-.filtres-tel{
-    display: flex;
-    align-items: center;
 }
 
 h2{
